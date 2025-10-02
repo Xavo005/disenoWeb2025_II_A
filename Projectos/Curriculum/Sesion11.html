@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Titulo del formulario</title>
+    <link rel="icon"
+        href="https://media.discordapp.net/attachments/1410998956909006978/1420057702637371513/image.png?ex=68d4034b&is=68d2b1cb&hm=2448adc052a9a8b2617bf773af583640275a304b266fb51922d604928fadc7eb&=&format=webp&quality=lossless&width=324&height=305">
+</head>
+
+<body>
+    <div id="contenedor" style="width: 500px;">
+        <h2>Formulario Pagina web</h2>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos personales">
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"><br>
+
+
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="nombre" id="nombre"><br>
+
+                <label for="direccion">Direccion</label>
+                <input type="text" name="nombre" id="nombre"><br>
+
+                <label for="dni">DNI</label>
+                <input type="text" name="nombre" id="nombre" maxlength="9"><br>
+
+                <label for="email">email</label>
+                <input type="text" name="nombre" id="nombre"><br>
+
+
+                <label for="fechaNacimiento">Fecha Nacimiento</label>
+                <select id="fechaNacimiento" name="fechaNacimiento">
+                    <option value="X" selected="selected">...</option>
+                    <option valua="A">Opcion 1</option>
+                    <option valua="B">Opcion 2</option>
+                </select><br>
+
+                <label for="universidad">Universidad</label>
+                <select id="universidad" name="universidad">
+                    <option value="X" selected="selected">...</option>
+                    <option valua="A">Usat</option>
+                    <option valua="B">Utp</option>
+                </select>
+
+
+
+
+            </fieldset>
+        </form>
+    </div>
+    <div id="contenedor2" style="width: 500px" ;>
+        <form id="Formulario2" name="formulario2" method="post" action="data.php">
+            <fieldset id="Sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" checked>
+                <label for="masculino">Masculino</label><br>
+
+                <input type="radio" name="sexo" id="femenino" value="Femenino">
+                <label for="femenino">Femenino</label><br>
+            </fieldset>
+        </form>
+    </div>
+    <div id="contenedor3" style="width: 500px;">
+        <form id="contenedor3" name="formulario3" method="post" action="data.php">
+            <fieldset id="Cursos">
+                <legend>Cursos</legend>
+
+                <input type="checkbox" name="cursos" id="Ia" value="Inteligencia Artificial">
+                <label for="ia">Inteligencia Artificial</label><br>
+
+                <input type="checkbox" name="cursos" id="bs" value="Business Intelligence">
+                <label for="bs">Business Intelligence</label><br>
+
+                <input type="checkbox" name="cursos" id="cd" value="Ciencia de Datos">
+                <label for="cd">Ciencia de datos</label><br>
+                
+                <input type="checkbox" name="cursos" id="cyb" value="CyberSeguridad">
+                <label for="cyb">CyberSeguridad</label><br>
+            </fieldset>
+         </form>
+    </div>
+    <div id="contenedor4" style="width: 500px;">
+        <form id="contenedor4"name="formulario4" method="post" action="data.php">
+            <fieldset id="Comentario">
+                <legend>Comentario</legend>
+                <textarea id="idComentarios" name="comen" rows="14" cols="50"></textarea>
+            </fieldset>
+            <br>
+        </form>
+    </div>
+    <input type="reset" class="btn" value="Nuevo">
+    <input type="submit" class="btn" value="Enviar">
+</body>
+
+</html>
