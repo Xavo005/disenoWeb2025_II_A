@@ -1,0 +1,10 @@
+
+
+a[class~="prueba"]{
+    color: red;
+}
+
+a[href^="mailto"]{
+    font-family: sans-serif;
+    color: rgb(33, 61, 33);
+}

@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    font-family: Arial;
+
+}
+
+header {
+    background-color: yellow;
+    height: 80px;
+}
+
+nav {
+    background-color: green;
+    width: 25%;
+}
+
+section {
+    background-color: gray;
+    width: 75%;
+    text-align: justify;
+
+}
+footer{
+    background-color: blue;
+    height: 50px;
+    clear:left;
+
+}
+nav,section{
+    float: left;
+    height: calc(100vh - 130px);
+}
+
+p{    padding: 15px;}
+
+h1{
+    margin: 0px;
+    text-align: center;
+    line-height: 80px;
+}
+li{
+    list-style: none;
+    padding-left: 5px;
+}

@@ -1,0 +1,49 @@
+ /* Ejercicio de Especificidad CSS Instrucciones: Analiza las siguientes reglas CSS y determina qué color, tamaño de fuente y familia de fuentes se aplicarán finalmente al párrafo */
+ /* Regla 1 */
+ p {
+     color: green;
+     font-size: 16px;
+     font-family: sans-serif;
+ }
+
+ /* Regla 2 */
+ .texto-principal {
+     color: blue;
+     font-size: 18px;
+ }
+
+ /* Regla 3 */
+ .importante {
+     font-family: monospace;
+ }
+
+ /* Regla 4*/
+ #miParrafo {
+     color: orange;
+     font-size: 20px;
+ }
+
+ /* Regla 5 */
+ p.importante {
+     font-family: cursive;
+ }
+
+ /* Regla 6 */
+ p#miParrafo {
+     font-size: 22px;
+ }
+
+ /* Regla 7 */
+ .importante#miParrafo {
+     color: rgb(0, 255, 106);
+ }
+
+ /* Regla 8 */
+ * {
+     font-style: italic;
+ }
+
+ /* Regla 9 */
+ #contenedorPrincipal p {
+     font-family: "Times New Roman";
+ }
