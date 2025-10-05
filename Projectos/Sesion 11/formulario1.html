@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        #Contenedor {
+            width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        legend {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        input[type="text"], input[type="email"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .radio-group {
+            margin-top: 10px;
+        }
+        
+        .radio-group label {
+            display: inline;
+            margin-right: 15px;
+        }
+        
+        .checkbox-group {
+            margin-top: 10px;
+        }
+        
+        .checkbox-group label {
+            display: block;
+            margin: 5px 0;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        
+        #botones {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        input[type="reset"] {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        input[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Contenedor">
+        <h2>Formulario de inscripción</h2>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos_personales">
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion">
+
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" maxlength="9">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="fecha_nacimiento">Fecha Nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+
+                <label for="universidad">Universidad</label>
+                <input type="text" name="universidad" id="universidad">
+            </fieldset>
+
+            <fieldset id="grupo_sexo">
+                <legend>Sexo</legend>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    
+                    <input type="radio" id="femenino" name="sexo" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="grupo_cursos">
+                <legend>Cursos</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="ia" name="cursos[]" value="inteligencia_artificial">
+                    <label for="ia">Inteligencia artificial</label>
+                    
+                    <input type="checkbox" id="bi" name="cursos[]" value="business_intelligence">
+                    <label for="bi">Business Intelligence</label>
+                    
+                    <input type="checkbox" id="cd" name="cursos[]" value="ciencia_datos">
+                    <label for="cd">Ciencia de datos</label>
+                    
+                    <input type="checkbox" id="cs" name="cursos[]" value="cybersecurity">
+                    <label for="cs">Cybersecurity</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="grupo_comentario">
+                <legend>Comentario</legend>
+                <textarea id="comentario" name="comentario"></textarea>
+            </fieldset>
+
+            <div id="botones">
+                <input type="reset" class="btn" value="Nuevo">
+                <input type="submit" class="btn" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
