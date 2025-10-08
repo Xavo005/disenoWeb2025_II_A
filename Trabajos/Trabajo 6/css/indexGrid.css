@@ -14,7 +14,8 @@ body {
 
 header {
     background-color: red;
-    text-align: center;
+    text-align: left;
+    
     
 }
 
@@ -53,7 +54,8 @@ aside {
 
 footer {
     background-color: red;
-    height: 135px;
+    color: white;
+    text-align: center;
 }
 
 p {
@@ -65,7 +67,6 @@ p {
 
 h1 {
     margin: 0px;
-    text-align: center;
     line-height: 80px;
     color: aliceblue;
 }
