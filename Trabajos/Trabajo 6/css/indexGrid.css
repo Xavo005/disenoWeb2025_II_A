@@ -9,11 +9,12 @@ header {
     background-color: red;
     text-align: left;
     color: white;
+    padding: 0px;
 }
 
 main {
     display: grid;
-    min-height: 74vh;
+    min-height: 72vh;
     grid-template-columns: 100%;
     grid-template-rows: 80px 1fr 100px;
     grid-template-areas: "my-nav" "my-section" "my-aside";
@@ -100,9 +101,7 @@ a {
 }
 
 p {
-    padding: 15px;
-    color: white;
-
+   padding: 5px;
 }
 
 
@@ -125,3 +124,25 @@ img {
     border-radius: 8px; 
 
 }
+
+article {
+    text-align: center;
+    padding: 20px;
+}
+
+article img {
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+article h4 {
+    margin-top: 20px;
+    color: #333;
+}
+
+article p {
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 16px;
+}
+
