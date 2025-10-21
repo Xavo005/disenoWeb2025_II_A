@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+
+header {
+    background-color: red;
+    text-align: left;
+    color: white;
+    padding: 0px;
+}
+
+main {
+    display: grid;
+    min-height: 72vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr 100px;
+    grid-template-areas: "my-nav" "my-section" "my-aside";
+}
+
+nav {
+    background-color: grey;
+    grid-area: my-nav;
+}
+
+section {
+    background-color: rgb(211, 210, 210);
+    grid-area: my-section;
+}
+
+aside {
+    background-color: grey;
+    grid-area: my-aside;
+    overflow-y: auto;
+    max-height: 100%;
+
+}
+
+nav,
+section,
+aside {
+    padding: 20px;
+    font-size: border-box;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:600px) and (max-width:1000px) {
+
+    header {
+        height: 100px;
+        line-height: 80px;
+
+    }
+
+
+
+    main {
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 80px 1fr;
+        grid-template-areas: "my-nav my-nav" "my-aside my-section";
+    }
+
+}
+
+@media(min-width:1001px) {
+    header {
+        height: 150px;
+        line-height: 100px;
+
+    }
+
+
+    main {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "my-nav my-section my-aside";
+    }
+
+    li {
+        width: 100%;
+        display: block;
+    }
+
+}
+
+p {
+   padding: 5px;
+}
+
+
+h1 {
+    margin: 0px;
+    line-height: 40px;
+    color: aliceblue;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+
+}
+
+article {
+    text-align: center;
+    padding: 20px;
+}
+
+article img {
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+article h4 {
+    margin-top: 20px;
+    color: #333;
+}
+
+article p {
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 16px;
+}
+

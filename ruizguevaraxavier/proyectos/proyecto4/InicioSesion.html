@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login y Registro</title>
+  <link rel="stylesheet" href="css/InicioSecion.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="login">
+      <h2>Bienvenido</h2>
+      <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+      <button onclick="window.location.href='login.html'">Iniciar sesión</button>
+    </div>
+
+
+    <div class="registro">
+      <h2>Nuevo Usuario</h2>
+      <button>Registrarse con Facebook</button>
+      <button>Registrarse con Google</button>
+
+      <form action="registro.php" method="post">
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" name="nombres" required>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <p>Al crear esta cuenta, aceptas nuestros <a href="#terminosycondiciones">términos & condiciones</a></p>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

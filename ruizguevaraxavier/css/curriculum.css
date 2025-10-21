@@ -1,0 +1,177 @@
+body {
+    display: grid; 
+    grid-template-areas:
+        "header"
+        "content" 
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto; 
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite; 
+    line-height: 1.5; 
+    color: #333;
+}
+
+#contenedor {
+    grid-area: content;
+    padding: 30px 20px; 
+}
+#contenedor section { 
+    background-color: white; 
+    padding: 40px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+header {
+    grid-area: header; 
+    background-color: white; 
+    color: #333;
+    padding: 0;
+    border-bottom: 2px solid #ccc; 
+    display: flex;
+    flex-direction: column; 
+}
+
+#nav-top {
+    background-color: #eee;
+    padding: 8px 30px; 
+    display: flex;
+    justify-content: flex-end; 
+    border-bottom: 1px solid #ccc;
+    font-size: 0.9em;
+}
+#nav-top-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+#nav-top-links a:hover {
+    text-decoration: underline;
+}
+
+#header-main-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 30px; 
+}
+
+#profile-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#profile-area img { 
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #ccc; 
+    background-color: #fff;
+}
+#profile-area h1 {
+    font-size: 1.8em; 
+    margin: 0;
+    color: #333;
+}
+#profile-area h3 {
+    font-size: 1em;
+    font-weight: normal; 
+    margin: 0;
+    color: #666; 
+}
+
+/* Menú Principal */
+#nav-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 30px; 
+}
+#nav-principal ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5px 0;
+}
+#nav-principal ul li a:hover {
+    color: #007bff;
+}
+
+
+#contenedor section h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contenedor section h2 {
+    font-size: 1.3em;
+    color: #333; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#contenedor section hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+#contenedor section ul {
+    padding-left: 20px;
+    list-style: disc; 
+}
+#contenedor section ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #343a40; 
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    text-align: left; 
+    font-size: 0.9em;
+}
+
+footer > div {
+    padding: 0 10px;
+}
+
+footer h3 {
+    border-bottom: 1px solid #555; 
+    padding-bottom: 5px;
+    color: #fff; 
+}
+
+.social-icons { 
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    width: 30px; 
+    height: auto;
+    background-color: transparent; 
+}
+
+footer > div:last-child > div {
+    border: 1px solid #555;
+    padding: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
