@@ -1,0 +1,13 @@
+body{
+    background-color: lightblue;
+    font-family: Arial;
+}
+.bloque{
+    background-color: cadetblue;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+}
+li{
+    list-style: none;
+}

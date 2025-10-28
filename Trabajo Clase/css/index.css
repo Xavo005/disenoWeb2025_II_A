@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    padding: 40px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+#campoBusqueda {
+    width: 100%;
+    max-width: 500px; 
+    padding: 12px 15px 12px 40px; 
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23888" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14c-2.49 0-4.5-2.01-4.5-4.5S7.51 5 10 5s4.5 2.01 4.5 4.5S12.49 14 10 14z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+}
+
+#campoBusqueda:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+#listaProductos {
+    list-style: none; 
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#listaProductos li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+    color: #444;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#listaProductos li:hover {
+    background-color: #e9ecef; 
+    color: #000;
+    cursor: pointer;
+}
+
+#listaProductos li:last-child {
+    border-bottom: none; 
+}
