@@ -1,0 +1,6 @@
+div [class = "col" ]{
+    border: 1px black solid;
+    background-color: rgb(8, 129, 129);
+    color: white;
+    padding: 10px;
+}

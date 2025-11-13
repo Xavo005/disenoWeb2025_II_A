@@ -1,0 +1,16 @@
+img {
+  width: 100%;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+*{
+   color: black;
+   background-color: black; 
+}
+
+
+.carousel {
+    height: 100vh; 
+    background-color: black; 
+}
