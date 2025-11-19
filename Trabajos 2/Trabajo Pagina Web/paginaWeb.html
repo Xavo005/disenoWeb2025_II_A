@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xav0 Tienda de Juegos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/paginaWeb.css">
+</head>
+<body>
+
+<header>
+        <nav id="top-nav" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a id="logo" class="navbar-brand" href="#">
+                    D'mod 2 
+                    <i class="fas fa-tshirt"></i> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul id="menu-principal" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Faq's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mi Cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Moneda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Idioma</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="search-area">
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                            <button id="search-btn" class="btn" type="button">Buscar</button>
+                        </div>
+                    </div>
+                    <div id="social-icons" class="col-12 col-lg-4 text-center text-lg-end mt-2 mt-lg-0">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav id="category-nav">
+            <div class="container">
+                <ul id="menu-categorias">
+                    <li><a href="#">Mujeres</a></li>
+                    <li><a href="#">Hombres</a></li>
+                    <li><a href="#">Niños</a></li>
+                    <li><a href="#">Invierno</a></li>
+                    <li><a href="#">Verano</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-4">
+        <div class="row">
+            <section id="carrusel-section" class="col-12 col-lg-9">
+                <img src="img/modelo-central.jpg" class="img-fluid" alt="Modelo D'mod 2">
+            </section>
+
+            <aside id="marcas-aside" class="col-12 col-lg-3 mt-4 mt-lg-0">
+                <h3 class="aside-title">Marcas</h3>
+                <ul>
+                    <li><a href="#">Levi's</a></li>
+                    <li><a href="#">Lacoste</a></li>
+                    <li><a href="#">Ralph Lauren</a></li>
+                    <li><a href="#">Wrangler</a></li>
+                    <li><a href="#">Lee</a></li>
+                    <li><a href="#">Adidas</a></li>
+                    <li><a href="#">Vans</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <section id="services-section" class="row text-center my-5">
+            <h2 class="col-12">Nuestros Servicios</h2>
+            <div class="col-sm-6 col-md-3 mb-3 service-card">
+                <i class="fas fa-check-circle"></i> 
+                <p>Calidad garantizada</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3 service-card">
+                <i class="fas fa-shipping-fast"></i> 
+                <p>Envío sin costo adicional</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3 service-card">
+                <i class="fas fa-exchange-alt"></i> 
+                <p>14 días para devolución</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3 service-card">
+                <i class="fas fa-headset"></i> 
+                <p>Soporte a cualquier hora</p>
+            </div>
+        </section>
+
+        <section id="products-grid" class="row">
+            <h2 class="col-12">Productos</h2>
+            <article class="col-6 col-md-4 col-lg-3 mb-4 product-item">
+                <img src="img/producto-1.jpg" class="img-fluid" alt="Camisa Jaguar">
+                <h4>Camisa Jaguar</h4>
+                <p><del>S/123.00</del> <span>S/80.00</span></p>
+                <button class="btn-comprar">Comprar</button>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 mb-4 product-item">
+                <img src="img/producto-2.jpg" class="img-fluid" alt="Polera Tomy">
+                <h4>Polera Tomy</h4>
+                <p><del>S/93.00</del> <span>S/70.00</span></p>
+                <button class="btn-comprar">Comprar</button>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 mb-4 product-item">
+                <img src="img/producto-3.jpg" class="img-fluid" alt="Pantalones Yoly">
+                <h4>Pantalones Yoly</h4>
+                <p><del>S/153.00</del> <span>S/110.00</span></p>
+                <button class="btn-comprar">Comprar</button>
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 mb-4 product-item">
+                <img src="img/producto-4.jpg" class="img-fluid" alt="Polera Doors">
+                <h4>Polera Doors</h4>
+                <p><del>S/38.50</del> <span>S/30.00</span></p>
+                <button class="btn-comprar">Comprar</button>
+            </article>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container pt-5 pb-3">
+            <div id="footer-subscribe" class="row justify-content-center text-center mb-5">
+                <div class="col-12 col-md-8">
+                    <h4>Suscríbete para recibir novedades</h4>
+                    <p>¡Cupones exclusivos y notificaciones de nuestros mejores eventos!</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="nombre@xyz.com">
+                        <button id="subscribe-btn" type="button">SUSCRIBIRME</button>
+                    </div>
+                    <small>He leído y acepto la política de datos personales</small>
+                </div>
+            </div>
+
+            <div id="footer-info" class="row border-top pt-4">
+                <div class="col-md-5 mb-4">
+                    <h5>ACERCA DE TIENDA D'MODA</h5>
+                    <p>Somos una tienda especializada en ventas integrales en productos de moda y para el hogar en la Región Lambayeque y todo el norte del país.</p>
+                    <div id="footer-social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>UBÍCANOS EN</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Pueblo Paleta</li>
+                        <li><i class="fas fa-envelope"></i> xavo@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +51 949 843 423</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5>HORARIO DE ATENCIÓN</h5>
+                    <table id="horario-table">
+                        <tbody>
+                            <tr><td>Lun - Vie:</td><td>8am - 9pm</td></tr>
+                            <tr><td>Sáb - Dom:</td><td>8am - 6pm</td></tr>
+                            <tr><td>Feriados:</td><td>9am - 1pm</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="copyright" class="text-center mt-3 border-top pt-3">
+                <small>&copy; 2025 Copyright: Adaptado por Xavier Ruiz Guevara</small>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
