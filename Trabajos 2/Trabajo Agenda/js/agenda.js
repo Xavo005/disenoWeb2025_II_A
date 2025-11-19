@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("email");
 
     const guardarBtn = document.getElementById("guardarBtn");
-    const recuperarBtn = document.getElementById("recuperarBtn");
+    const buscarBtn = document.getElementById("buscarBtn");
     const eliminarBtn = document.getElementById("eliminarBtn");
     const eliminarTodoBtn = document.getElementById("eliminarTodoBtn");
     const contactosUI = document.getElementById("contactos");
@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(`Contacto ${nombre} guardado exitosamente.`);
     }
 
-    function recuperarDato() {
+    function buscarDato() {
         const nombre = nombreInput.value.trim();
 
         if (nombre === "") {
-            alert("Por favor, ingrese el nombre del contacto a recuperar.");
+            alert("Por favor, ingrese el nombre del contacto a buscar.");
             return;
         }
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const contactoRecuperado = JSON.parse(contactoRecuperadoJSON);
             movilInput.value = contactoRecuperado.movil;
             emailInput.value = contactoRecuperado.email;
-            alert(`Contacto ${nombre} recuperado.`);
+            alert(`Contacto ${nombre} encontrado.`);
         } else {
             alert("Contacto no encontrado.");
             movilInput.value = "";
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     guardarBtn.addEventListener("click", guardarDato);
-    recuperarBtn.addEventListener("click", recuperarDato);
+    buscarBtn.addEventListener("click", buscarDato);
     eliminarBtn.addEventListener("click", eliminarDato);
     eliminarTodoBtn.addEventListener("click", eliminarTodo);
     

@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7f9; /* Fondo general claro */
+    background-color: #f4f7f9; 
     color: #333;
     display: flex;
     justify-content: center;
@@ -22,10 +22,10 @@ body {
     max-width: 700px;
 }
 
-/* --- Títulos --- */
+
 h1 {
     text-align: center;
-    color: #1a73e8; /* Azul primario */
+    color: #1a73e8; 
     margin-bottom: 25px;
     font-weight: 700;
 }
@@ -38,16 +38,14 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* --- Tarjetas --- */
 .form-card, .table-card {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px;
 }
 
-/* --- Campos de entrada --- */
 .input-group {
     margin-bottom: 15px;
 }
@@ -74,7 +72,6 @@ h2 {
     box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
 }
 
-/* --- Botones --- */
 .button-group {
     display: flex;
     gap: 10px;
@@ -121,7 +118,6 @@ h2 {
     border: 1px solid #d93025;
 }
 
-/* --- Lista de Contactos --- */
 .contactos-list {
     display: flex;
     flex-direction: column;
