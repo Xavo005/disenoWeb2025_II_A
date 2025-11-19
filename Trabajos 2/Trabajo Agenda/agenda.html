@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendita de Xav</title>
+    <link rel="stylesheet" href="css/agenda.css">
+</head>
+<body>
+    <body>
+    <div class="container">
+        <h1>Mi Agenda de Contactos</h1>
+
+        <div class="form-card">
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre completo">
+            </div>
+
+            <div class="input-group">
+                <label for="movil">Num Celular:</label>
+                <input type="text" id="movil" placeholder="Número de móvil">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Correo electrónico">
+            </div>
+
+            <div class="button-group">
+                <button id="guardarBtn" class="btn primary">Guardar</button>
+                <button id="recuperarBtn" class="btn secondary">Recuperar</button>
+                <button id="eliminarBtn" class="btn danger">Eliminar</button>
+                <button id="eliminarTodoBtn" class="btn danger-outline">Eliminar Todos</button>
+            </div>
+        </div>
+        
+        <div class="table-card">
+            <h2>Contactos Guardados</h2>
+            <div class="contactos-list" id="contactos">
+                <div class="table-header">
+                    <span class="col-nombre">Nombre</span>
+                    <span class="col-celular">Celular</span>
+                    <span class="col-email">Email</span>
+                </div>
+                </div>
+        </div>
+    </div>
+    <script src="js/agenda.js"></script>
+</body>
+</html>
