@@ -1,0 +1,19 @@
+nav li{
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial;
+}
+
+nav li:hover{
+    background-color: yellow;
+    color: black;
+}

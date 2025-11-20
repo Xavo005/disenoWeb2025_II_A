@@ -1,0 +1,377 @@
+body {
+    background-color: #8B4513;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.escena {
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+
+/* ===== CARA DEL RATÓN ===== */
+.caraRaton {
+    width: 200px;
+    height: 180px; 
+    background-color: #808080;
+    border-radius: 50% 50% 45% 45%;
+    position: relative;
+    margin: 50px auto;
+    z-index: 2;
+    animation: masticar 2s ease-in-out infinite;
+}
+
+@keyframes masticar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05) translateY(2px);
+    }
+}
+
+/* Cejas */
+.caraRaton::before,
+.caraRaton::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #606060;
+    z-index: 3;
+    top: 45px;
+    border-radius: 2px;
+}
+
+.caraRaton::before {
+    left: 30px;
+    transform: rotate(-10deg);
+}
+
+.caraRaton::after {
+    right: 30px;
+    transform: rotate(10deg);
+}
+
+/* ===== OREJAS ===== */
+.oreja {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;   
+    border-right: 30px solid transparent;  
+    border-bottom: 60px solid #808080;      
+    position: absolute;
+    top: -25px; 
+    z-index: 1; 
+}
+
+.oreja::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;   
+    border-right: 18px solid transparent;  
+    border-bottom: 45px solid #FFB6C1;    
+    position: absolute;
+    top: 8px;
+    left: -18px; 
+}
+
+.orejaIzq {
+    left: 20px; 
+    transform: rotate(-15deg); 
+    transform-origin: bottom center; 
+}
+
+.orejaDer {
+    right: 20px; 
+    transform: rotate(15deg); 
+    transform-origin: bottom center; 
+}
+
+/* ===== OJOS ===== */
+.ojos {
+    width: 45px;
+    height: 28px;
+    background-color: white; 
+    position: absolute;
+    top: 55px;
+    border-radius: 50%;
+    z-index: 2;
+    border: 2px solid #606060;
+}
+
+.ojos::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: black; 
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 14px;
+    animation: mirarQueso 3s ease-in-out infinite;
+}
+
+@keyframes mirarQueso {
+    0%, 100% {
+        left: 14px;
+    }
+    50% {
+        left: 18px;
+    }
+}
+
+.ojos::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: white; 
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    z-index: 3;
+    animation: brilloOjo 3s ease-in-out infinite;
+}
+
+@keyframes brilloOjo {
+    0%, 100% {
+        left: 16px;
+    }
+    50% {
+        left: 20px;
+    }
+}
+
+.ojoIzq {
+    left: 25px;
+}
+
+.ojoDer {
+    right: 25px;
+}
+
+/* ===== HOCICO ===== */
+.hocico {
+    width: 90px;
+    height: 70px;
+    background-color: #C0C0C0; 
+    position: absolute;
+    top: 90px;
+    left: 55px;
+    border-radius: 50%;
+    z-index: 2; 
+}
+
+/* ===== NARIZ ===== */
+.nariz {
+    width: 18px;
+    height: 14px;
+    background-color: #FFB6C1; 
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: 12px;
+    left: 36px;
+    animation: olfatear 1.5s ease-in-out infinite;
+}
+
+@keyframes olfatear {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* ===== DIENTES ===== */
+.dientes {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.diente {
+    width: 8px;
+    height: 12px;
+    background-color: white;
+    border-radius: 20% 20% 50% 50%;
+    position: absolute;
+    top: 0;
+    border: 1px solid #E0E0E0;
+}
+
+.dienteIzq {
+    left: -10px;
+}
+
+.dienteDer {
+    right: -10px;
+}
+
+/* ===== BIGOTES ===== */
+.bigote {
+    width: 50px;
+    height: 2px;
+    background-color: #404040; 
+    position: absolute;
+    top: 28px;
+}
+
+.bigote::before,
+.bigote::after {
+    content: "";
+    width: 45px; 
+    height: 2px;
+    background-color: #404040;
+    position: absolute;
+}
+
+.bigoteIzq {
+    left: -30px; 
+    transform-origin: right;
+    animation: moverBigoteIzq 2s ease-in-out infinite;
+}
+
+@keyframes moverBigoteIzq {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+.bigoteIzq::before {
+    top: -10px;
+    right: 0;
+    transform: rotate(15deg); 
+}
+
+.bigoteIzq::after {
+    top: 10px;
+    right: 0;
+    transform: rotate(-15deg); 
+}
+
+.bigoteDer {
+    right: -30px; 
+    transform-origin: left;
+    animation: moverBigoteDer 2s ease-in-out infinite;
+}
+
+@keyframes moverBigoteDer {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.bigoteDer::before {
+    top: -10px;
+    left: 0;
+    transform: rotate(-15deg);
+}
+
+.bigoteDer::after {
+    top: 10px;
+    left: 0;
+    transform: rotate(15deg);
+}
+
+/* ===== QUESO ===== */
+.queso {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid #FFD700;
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+    animation: quesoDesaparecer 6s ease-in-out infinite;
+}
+
+@keyframes quesoDesaparecer {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.95);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.7);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ===== AGUJEROS DEL QUESO ===== */
+.agujero {
+    position: absolute;
+    background-color: #FFA500;
+    border-radius: 50%;
+}
+
+.agujero1 {
+    width: 22px;
+    height: 22px;
+    top: 30px;
+    left: 60px;
+}
+
+.agujero2 {
+    width: 18px;
+    height: 18px;
+    top: 70px;
+    left: 40px;
+}
+
+.agujero3 {
+    width: 20px;
+    height: 20px;
+    top: 60px;
+    left: 95px;
+}
+
+/* ===== MORDIDA EN EL QUESO ===== */
+.mordida {
+    width: 40px;
+    height: 40px;
+    background-color: #8B4513;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    animation: aparecerMordida 6s ease-in-out infinite;
+}
+
+@keyframes aparecerMordida {
+    0%, 60% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    margin: 20px;
+}
+.bloque {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 2px solid navy;
+    display: none;
+}
+
+li {
+    list-style: none;
+}

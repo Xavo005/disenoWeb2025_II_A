@@ -1,0 +1,112 @@
+.caraOso {
+    width: 200px;
+    height: 200px;
+    background-color: #ca641b;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px auto;
+}
+
+.oreja {
+    width: 100px;
+    height: 120px;
+    background-color: #ca641b;
+    position: absolute;
+    top: -40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.oreja::before {
+    content: "";
+    width: 60px;
+    height: 80px;
+    background-color: #F5DEB3;
+    border-radius: 50%;
+}
+
+.orejaIzq {
+    left: -20px;
+}
+
+.orejaDer {
+    right: -20px;
+}
+
+.ojos {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 60px;
+    border-radius: 50%;
+}
+
+.ojos::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.ojoIzq {
+    left: 40px;
+}
+
+.ojoDer {
+    right: 40px;
+}
+
+.hocico {
+    width: 100px;
+    height: 80px;
+    background-color: #F5DEB3;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    border-radius: 50%;
+}
+
+.nariz {
+    width: 30px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: 15px;
+    left: 36%;
+}
+
+.boca {
+    width: 2px;
+    height: 25px;
+    background-color: #333;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+}
+
+.boca::before,
+.boca::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid #333;
+    position: absolute;
+    top: 5px;
+}
+
+.boca::before {
+    left: -10px;
+}
+
+.boca::after {
+    right: -10px;
+}
